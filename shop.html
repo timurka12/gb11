@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Store</title>
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a>
+        <a href="{{ url_for('info') }}">About us</a>
+        <a href="{{ url_for('contacts') }}">Contacts</a>
+    </nav>
+    <h>Shop of dream</h1>
+        {% block content %}
+        {% endblock %}
+    <footer>
+        <div>
+            <p>Copyright © 2023 PDA. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
